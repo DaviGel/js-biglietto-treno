@@ -1,13 +1,3 @@
-Scrivere un programma che chieda all’utente:
-Il numero di chilometri da percorrere
-Età del passeggero
-Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
-il prezzo del biglietto è definito in base ai km (0.21 € al km)
-va applicato uno sconto del 20% per i minorenni
-va applicato uno sconto del 40% per gli over 65.
-L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
-Questo richiederà un minimo di ricerca.
-
 # Biglietto del treno
 
 1. Chiedere all'utente, tramite un `prompt`, il n° di km da percorrere e salvarlo in una variabile chiamata kilometriTotali. Convertire il valore di kilometriTotali da stringa a numero tramite la funzione `parseInt()`.
