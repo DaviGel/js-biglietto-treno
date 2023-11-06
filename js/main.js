@@ -19,5 +19,5 @@ if (etaPasseggero > 0 && etaPasseggero < 18) {
 } else if (etaPasseggero >= 18 && etaPasseggero <= 65) {
   console.log('Il prezzo del biglietto è:', prezzoBiglietto.toFixed(2), '€');
 } else {
-  console.log('Inserire una data valida!');
+  console.log('Inserire una età valida!');
 }
