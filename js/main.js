@@ -5,7 +5,10 @@ const kilometriTotali = parseInt(
 const etaPasseggero = parseInt(prompt("Inserisci l'età del passeggero:"));
 
 let prezzoBiglietto = kilometriTotali * 0.21;
-// N.B. dato che il metodo toFixed() restituisce una stringa, potrei convertire prezzoBiglietto.toFixed(2) in un numero, qualora fosse necessario, tramite la funzione parseInt()
+/* N.B. dato che il metodo toFixed() restituisce una stringa,
+potrei convertire prezzoBiglietto.toFixed(2) in un numero,
+qualora fosse necessario, tramite la funzione parseInt()
+*/
 console.log('Il prezzo del biglietto è:', prezzoBiglietto.toFixed(2), '€');
 
 if (etaPasseggero > 0 && etaPasseggero < 18) {
