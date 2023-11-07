@@ -3,6 +3,7 @@
 // Sconti
 const scontoMinori = 20;
 const scontoAnziani = 40;
+const prezzoKilometro = 0.21;
 
 // Kilometri
 const kilometri = Number(prompt('Inserisci il numero di km da percorrere:'));
@@ -18,7 +19,7 @@ if (
   etaPasseggero > 0 &&
   etaPasseggero <= 130
 ) {
-  let prezzoBiglietto = kilometri * 0.21;
+  let prezzoBiglietto = kilometri * prezzoKilometro;
 
   if (etaPasseggero < 18) {
     prezzoBiglietto -= (prezzoBiglietto * scontoMinori) / 100;
