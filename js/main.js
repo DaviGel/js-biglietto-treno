@@ -1,3 +1,5 @@
+'use strict';
+
 const kilometriTotali = parseInt(
   prompt('Inserisci il numero di km da percorrere:')
 );
