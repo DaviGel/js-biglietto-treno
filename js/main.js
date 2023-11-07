@@ -1,12 +1,16 @@
 'use strict';
 
-const scontoMinorenni = 0.8;
-const scontoAnziani = 0.6;
+// Sconti
+const scontoMinori = 20;
+const scontoAnziani = 40;
 
+// Kilometri
 const kilometri = Number(prompt('Inserisci il numero di km da percorrere:'));
 
+// Età
 const etaPasseggero = Number(prompt("Inserisci l'età del passeggero:"));
 
+// Condizione
 if (
   !isNaN(kilometri) &&
   !isNaN(etaPasseggero) &&
@@ -17,13 +21,17 @@ if (
   let prezzoBiglietto = kilometri * 0.21;
 
   if (etaPasseggero < 18) {
-    prezzoBiglietto *= scontoMinorenni;
+    prezzoBiglietto -= (prezzoBiglietto * scontoMinori) / 100;
   } else if (etaPasseggero > 65) {
-    prezzoBiglietto *= scontoAnziani;
+    prezzoBiglietto -= (prezzoBiglietto * scontoAnziani) / 100;
   }
 
   /* N.B. dato che il metodo toFixed() restituisce una stringa, potrei convertire prezzoBiglietto.toFixed(2) in un numero, qualora fosse necessario, tramite la funzione Number() */
-  console.log('Il prezzo del biglietto è:', prezzoBiglietto.toFixed(2), '€');
+  console.log(
+    'Il prezzo del biglietto è:',
+    Number(prezzoBiglietto.toFixed(2)),
+    '€'
+  );
 } else {
   console.log("Inserire i km validi e un'età valida in formato numerico!");
 }
